@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "kIQ4WRaf+HewIh/c10k/hCnAosdWD5qn+Ub8gdvnMFBHPS+8/RvGAO88y8hCNNgCcZNI6yvymLJet3qcKImRkw==",
+  "success": false,
+  "projectFilePath": "C:\\code\\Egxr41k\\C#_Dev\\TicTacToe\\ConsoleTicTacToe\\TicTacToe.Console.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project TicTacToe.Core is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project TicTacToe.Core supports: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "TicTacToe.Core",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

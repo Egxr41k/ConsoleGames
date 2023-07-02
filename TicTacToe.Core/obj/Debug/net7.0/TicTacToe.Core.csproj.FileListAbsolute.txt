@@ -1,0 +1,12 @@
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\obj\Debug\net7.0\TicTacToe.Core.csproj.AssemblyReference.cache
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\obj\Debug\net7.0\TicTacToe.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\obj\Debug\net7.0\TicTacToe.Core.AssemblyInfoInputs.cache
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\obj\Debug\net7.0\TicTacToe.Core.AssemblyInfo.cs
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\obj\Debug\net7.0\TicTacToe.Core.csproj.CoreCompileInputs.cache
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\bin\Debug\net7.0\TicTacToe.Core.deps.json
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\bin\Debug\net7.0\TicTacToe.Core.dll
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\bin\Debug\net7.0\TicTacToe.Core.pdb
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\obj\Debug\net7.0\TicTacToe.Core.dll
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\obj\Debug\net7.0\refint\TicTacToe.Core.dll
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\obj\Debug\net7.0\TicTacToe.Core.pdb
+C:\code\Egxr41k\C#_Dev\TicTacToe\TicTacToe.Core\obj\Debug\net7.0\ref\TicTacToe.Core.dll
