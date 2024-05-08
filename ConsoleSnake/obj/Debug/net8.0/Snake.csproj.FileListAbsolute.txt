@@ -1,0 +1,14 @@
+C:\Users\Egxr41k\Desktop\snake_cs\bin\Debug\net8.0\Snake.exe
+C:\Users\Egxr41k\Desktop\snake_cs\bin\Debug\net8.0\Snake.deps.json
+C:\Users\Egxr41k\Desktop\snake_cs\bin\Debug\net8.0\Snake.runtimeconfig.json
+C:\Users\Egxr41k\Desktop\snake_cs\bin\Debug\net8.0\Snake.dll
+C:\Users\Egxr41k\Desktop\snake_cs\bin\Debug\net8.0\Snake.pdb
+C:\Users\Egxr41k\Desktop\snake_cs\obj\Debug\net8.0\Snake.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Egxr41k\Desktop\snake_cs\obj\Debug\net8.0\Snake.AssemblyInfoInputs.cache
+C:\Users\Egxr41k\Desktop\snake_cs\obj\Debug\net8.0\Snake.AssemblyInfo.cs
+C:\Users\Egxr41k\Desktop\snake_cs\obj\Debug\net8.0\Snake.csproj.CoreCompileInputs.cache
+C:\Users\Egxr41k\Desktop\snake_cs\obj\Debug\net8.0\Snake.dll
+C:\Users\Egxr41k\Desktop\snake_cs\obj\Debug\net8.0\refint\Snake.dll
+C:\Users\Egxr41k\Desktop\snake_cs\obj\Debug\net8.0\Snake.pdb
+C:\Users\Egxr41k\Desktop\snake_cs\obj\Debug\net8.0\Snake.genruntimeconfig.cache
+C:\Users\Egxr41k\Desktop\snake_cs\obj\Debug\net8.0\ref\Snake.dll

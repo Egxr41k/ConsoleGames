@@ -1,80 +1,72 @@
-# Neural Network for tic-tac-toe game.
+﻿©Egxr41k Software 2022
 
-has console (C#) and web (TS) interfaces, all logic located in TicTacToe.Core
-## Table of Contents
-- [Todo](#todo)
-- [Install](#install)
-- [Run](#run)
-- [Docs](#docs)
+Консольная нейросеть для игры в крестики нолики
 
-## Todo
-1. ~~Update Readme~~
-2. ~~Add Web-interface~~
-3. Bug fixing in TicTacToe.Core
-4. Add game mode switcher
+весь последущий текст будет свего рода документацией
+к даннной программе. Читайте это если ходите лучше ознакомиться
+с алгоритмами работы нейронных сетей
 
-## Install
-```
-git clone https://github.com/Egxr41k/ConsoleTicTacToe.git
-```
-## Run
-To start in the terminal, use the first command. If you want to start in the browser, use the second command.
+начнем с краткого пояснения для всех имеющихся классов:
+	Program.cs - точка входа в приложение
 
-```
-cd TicTacToe.Console
-cd TicTacToe.API
-```
-then, run the selected .net project
+	Game.cs - это один из ключевых классов,
+	он содержит методы для игры в крестики нолики
 
-```
-dotnet run
-```
-## Docs
-class explanation in TicTacToe.Core:
+	Matrix.cs - содержит матрицу(двумерный массив служаций
+	игровым полем) и статичекие методы для управления/проверки значений в ней
 
-1. Matrix - contains a matrix (two-dimensional array serving as a playing field) and static methods for working with it.
-2. Game is the parent class for DeepLearning and MinAPI, it contains the methods and fields necessary for the game and the processes based on it.
-3. DeepLearning - a class that implements the so-called deep learning using a cycle of automated neural network games with random moves without human intervention
-  <details>
-	  <summary>Deep learning explanation</summary>
-	    Is just a wrapper over nn.Backpropagation. During each game, the neural network receives the response it needs for training, represented by the response variable.           This type of learning can be classified as supervised learning, although the classical dataset is not used
-  </details>
+	DeepLearning.cs - класс реализовующий так называемое 
+	глубокое обучение посредством игр нейросети со случайными ходами
 
-4. NeuralNetwork - a neural network class, that contains methods for its use and training.
-  <details>
-	  <summary>NeuralNetwork structure explanation</summary>
-	  the neural network consists of three methods representing its different parts
-	  InputLayer
-	  HiddenLayers
-	  OutputLayer
-	  technically, these layers do not exist, but there are arrays of neurons.
-    1. InputNeurons - stores input neurons,
-	  they are needed to transfer values to the neural network.
-    2. HiddenNeurons - unlike InputNeurons, this array is two-dimensional
-	  the second dimension is needed to mark the layers of neurons.
-    3. OutputNeurons does not exist for the following reason:
-	  the task in question requires output from the neural network
-	  as two integers from 0 to 2 inclusive.
-	  Due to the fact that the neural network operates with fractional numbers from 0 to 1
-	  using two neurons representing indexes will not work.
-    Therefore, the initialization of the network output is implemented by the OutputLayer method.
-	  it finds the largest value on the last hidden layer
-	  and writes its position into indices like this,
-	  if the final value of the neurons of the last hidden layer
-	  were written in a two-dimensional array (row and column)
-  </details>
+	NeuralNetwork.cs - класс нейросети
 
-5. Neuron - contains a set of weights variables storing values the activation function and the derivative of the activation function, is a structural unit for the NeuralNetwork class
+	Neuron.cs - содержит в себе набор весов
+	переменных хранящих значения
+	функцию активации и производную функции активации,
+	являеться структурной единицей для класса NeuralNetwork
 
-<details>
-	<summary>notes:</summary>
-  the position of the character playing is the coordinate in the matrix
-  so for example the position in the center of the field will have indices 1 1,
-  where the first index is the row number and the second is the column number
-  (due to the fact that the count of array elements starts from 0
-  first row/column respectively have index 0)
-</details>
+примечания:
+	позиция символа играющего это кордината в матрице
+	так например позиция в ценртре поля, будет иметь индексы 1 1,
+	где первый индекс означает номер строки а второй - номер столбика
+	(изза того что счет элементов массива начинаеться с 0
+	первая строка/столбик соответсвенно имеют индекс 0)
 
-### ©Egxr41k Software 2023
+режимы игры:
+	для каждой из двух сторон можно выбрать игрока,
+	это может быть человек, нейросеть или случайные ходы
 
+структура нейросети:
+	вся нейросеть состоит из трех методов представляюх разные ее части
+	InputLayer
+	HiddenLayers
+	OutputLayer
+	технически, этих слоев несществует, но сузествует массивы нейронов
+	
+	InputNeurons - хранит в себе входные нейроны,
+	они нужны для передачи значений в нейросеть
+	
+	HiddenNeurons - в отличии от InputNeurons, этот массив двумерный
+	второе измерение нужно для обозначения слоев нейронов
 
+	OutputNeurons - не сществует по следущей причине:
+		поставленая задача требует от нейросети выход
+		в виде двух целых чисел от 0 до 2 включительно.
+		Изза того что нейросеть оперирует дробными числами от 0 до 1
+		испольщовать два нейрона предствляющих инлексы не выйдет
+
+	поэтому инициальзацию выхода сети реальзует метод OutputLayer.
+	он находит наибольшеее значение на последнем скрытом слое
+	и записывает в индексы его позицию так,
+	если бы конечные значение нейронов последного скрытого слоя
+	были записаны в двумерный масив(строкку и столбик)
+
+процесс обучения:
+	по сути класс DeepLearning.cs являетьсмя лишь оберткой над
+	nn.Backpropogation.
+
+	во время каждого хода нейросеть получает отклик, необходимый
+	для обучения, представленный переменной responce
+	
+	данный вид обучения можно классифицировать как обучение с учителем,
+	хоть и не используеться классический датасет
